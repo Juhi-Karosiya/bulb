@@ -12,18 +12,51 @@
             height: 60vh;
             width: 60vh;
             margin: 20vh auto;
+            
         }
 
         img{
             height: 45vh;
             display: block;
-            margin: 25px auto;
+            margin: 20px auto;
         }
+
+        .btn{
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+        }
+
+        #btn-on{
+            width: 80px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: green;
+            color: white;
+        }
+
+        #btn-off{
+            width: 80px;
+            font-size: 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: red;
+            color: white;
+
+        }
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <img src="./img/idea-bulb.png" alt="on-bulb">
+
+        <div class="btn">
+            <button id="btn-on">On</button>
+            <button id="btn-off">Off</button>
+        </div>
     </div>
 </body>
 </html>
