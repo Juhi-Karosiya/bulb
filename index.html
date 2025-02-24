@@ -64,14 +64,31 @@
 
     </style>
 </head>
-<body>
+<body id="main">
     <div class="container">
-        <img src="./img/idea-bulb.png" alt="on-bulb">
+        <img src="./img/on.png" id="bulb" alt="on-bulb">
 
         <div class="btn">
-            <button class="btn-on">On</button>
-            <button class="btn-off">Off</button>
+            <button class="btn-on" onclick="on()" >On</button>
+            <button class="btn-off" onclick="off()">Off</button>
         </div>
     </div>
+    <script>
+        const bulbElement = document.getElementById("bulb");
+        const bodyElement = document.getElementById("main")
+
+
+        function on(){
+            bulbElement.src = "./img/on.png";
+            bodyElement.style.backgroundColor = "white"
+
+        }
+
+        function off(){
+            bulbElement.src = "./img/off.png";
+            bodyElement.style.backgroundColor = "black"
+        }
+
+    </script>
 </body>
 </html>
